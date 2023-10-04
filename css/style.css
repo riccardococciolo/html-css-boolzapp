@@ -16,3 +16,24 @@
 img {
     max-width: 100%;
 }
+
+/* main-block */
+
+.main-block {
+    background-color: rgb(186, 219, 219);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* left-block */
+
+.left-block {
+    width: 30%;
+}
+
+/* right-block */
+
+.right-block {
+    width: 70%;
+}
