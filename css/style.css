@@ -5,6 +5,8 @@
     --light-grey: rgb(250 250 250);
     --dark-grey: rgb(177 177 177);
     --bar-color: rgb(243 238 234);
+    --blue: rgb(142 218 252);
+    --light-blue: rgb(242 251 255);
 }
 
 * {
@@ -15,6 +17,10 @@
 
 img {
     max-width: 100%;
+}
+
+a {
+    color: inherit;
 }
 
 /* utility */
@@ -29,6 +35,30 @@ img {
 
 .column {
     flex-direction: column;
+}
+
+.fs {
+    font-size: 1.2rem;
+}
+
+.grey {
+    color: rgb(114, 114, 114);
+}
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pl-1 {
+    padding-left: 1rem;
+}
+
+.pb-05 {
+    padding-bottom: .5rem;
 }
 
 /* main-block */
@@ -76,12 +106,12 @@ img {
 
 .pp {
     width: 20%;
-    /* padding: 1rem 0; */
 }
 
 .pp img {
     display: block;
     border-radius: 50%;
+    background-size: contain;
     padding: .5rem;
 }
 
@@ -94,6 +124,39 @@ img {
         width: 100%;
     }
 }
+
+/* notification */
+
+.notification {
+    height: 100px;
+    padding: 1.5rem 1rem;
+    background-color: var(--blue);
+}
+
+.notification-icon {
+    width: 20%;
+}
+
+.circle {
+    font-size: 1.5rem;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--light-blue);
+    line-height: 60px;
+    text-align: center;
+    color: var(--blue);
+}
+
+@media screen and (max-width: 991px) {
+    .notification {
+        display: none;
+    }
+}
+
+/* search */
+
+
 
 /* right-block */
 
