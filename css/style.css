@@ -61,6 +61,10 @@ a {
     padding-bottom: .5rem;
 }
 
+.full-width {
+    width: 100%;
+}
+
 /* main-block */
 
 .main-block {
@@ -129,12 +133,16 @@ a {
 
 .notification {
     height: 100px;
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem 1rem;
     background-color: var(--blue);
 }
 
 .notification-icon {
     width: 20%;
+}
+
+.left-widget {
+    width: 80%;
 }
 
 .circle {
@@ -191,6 +199,47 @@ a {
 @media screen and (max-width: 991px) {
     .search {
         display: none;
+    }
+}
+
+/* chat-box */
+
+.chat-box {
+    overflow-y: auto;
+}
+
+.left-row {
+    border: 3px solid var(--light-grey);
+    /* height: calc(100% / 8); */
+}
+
+.profile-name {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .5rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.profile-name p {
+    color: var(--dark-grey);
+}
+
+.profile-name span {
+    color: var(--dark-grey);
+}
+
+.left-row:hover {
+    background-color: var(--light-grey);
+}
+
+@media screen and (max-width: 991px) {
+    .profile-name {
+        display: none;
+    }
+
+    .chat-box {
+        height: 100%;
     }
 }
 
