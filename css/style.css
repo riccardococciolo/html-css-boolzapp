@@ -355,13 +355,17 @@ a {
     justify-content: space-between;
     padding: 1rem .5rem .2rem .1rem;
     color: var(--dark-grey);
+    /* position: relative; */
 }
 
-.message-widget span {
+.hour {
     font-size: .6rem;
 }
 
 .drop-down-menu {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: black;
     word-wrap: break-word;
     padding: .7rem 1rem;
     text-align: center;
@@ -376,8 +380,8 @@ a {
     display: none;
 }
 
-.message-widget i:hover .drop-down-menu {
-    display: block;
+.message-widget .menu:hover .drop-down-menu {
+    display: flex;
 }
 
 @media screen and (max-width: 540px) {
